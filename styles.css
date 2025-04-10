@@ -73,7 +73,7 @@ nav {
     align-items: center;
     left: 0;
     right: 0;
-    max-width: 1400px;
+    max-width: 1600px;
     margin-inline: auto;
     z-index: 5;
     padding: 16px 32px;
@@ -96,22 +96,97 @@ nav .menu-items a:hover {
 
 header 
 {
-    display:flex;
-    height: 100vh;
-    align-items: center;
-    height: 100vh;
-    padding: 0px 20px;
-    
-}
-
-header .left {
-padding: 150px;
-flex: 1;
-}
-
-.buttons {
+    position:absolute;
     display: flex;
-    gap: 24px;
-    margin-top: 32px; 
+    align-items: center;
+    left: 0;
+    right: 0;
+    max-width: 1400px;
+    margin-inline: auto;
+    margin-top: 350px;
+    z-index: 1;
 }
 
+/* About Section */
+
+
+#about .container {
+    position:absolute;
+    display: flex;
+    align-items: center;
+    left: 0;
+    right: 0;
+    max-width: 1900px;
+    background: #f5f5f5;
+    margin-inline: auto;
+    padding-top: 100px;
+    margin-top: 900px;
+    z-index: 1;
+}
+
+#about .container .left {
+    height: 700px;
+    width: 700px;
+}
+
+#about .container .left img {
+    padding-left: 50px;
+    margin-left: 200px;
+    margin-top: 150px;
+}
+
+#about .container .right {
+    padding-left: 400px;
+}
+
+
+h2, h3 {
+    font-size: 30px;
+    line-height: 100%;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin: 16px 0;
+    color:  #286d63;
+}
+
+/* Services Section */
+
+#services {
+    position:absolute;
+    display: flex;
+    align-items: center;
+     max-width: 1900px;
+     margin-inline: auto; /*helps elements stay within set margins */
+     padding-left: 250px;
+    left: 0;
+    right: 0;
+}
+
+section .heading-container {
+    max-width: 500px; 
+    text-align: center;
+    padding-top: 1800px; 
+    margin-bottom: 60px;
+    margin-inline: auto;
+}
+
+.services-container {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 40px;
+
+}
+
+.services-container .service {
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.1);
+    transition: all 300ms ease;
+}
+
+.services-container .content {
+    padding: 16px;
+}
+
+.services-container .service:hover {
+    transform: scale(1.04); /*for the hover effect */
+    box-shadow: 0 3px 80px rgba(0, 0, 0, 0.1);
+}
